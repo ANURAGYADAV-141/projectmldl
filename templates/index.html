@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- Basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <!-- Site Metas -->
+   <title></title>
+   <head>
+    <link rel="stylesheet" type='text/css' href="{{url_for('static', filename='style/style.css')}}">
+    <link rel="stylesheet" type='text/css' href="{{url_for('static',filename='style/font-awesome.min.css')}}" >
+  
+   </head>
+   <body id="home_page" class="home_page">
+ 
+            
+    <form class="contact-form" action='/predict' method="post">
+      <br><br>
+
+  <h3>Diabetes Prediction </h3>
+      <table>
+    <tr><td class="txtb"> Number of Pregnanacies
+      <td class="txtb">  <input  name="Number of Pregnanacies" placeholder ="Number of Pregnanacies " >
+        </tr>
+        <tr><td class="txtb"> Glucose Concentration(mg/dl)
+            <td class="txtb">  <input  name="Glucose Concentration(mg/dl)" placeholder="Glucose Concentration(mg/dl)" > 
+    </tr>
+       
+      <tr><td class="txtb"> Diastolic Blood Pressure(mm hg)
+      <td class="txtb">  <input  name="Diastolic Blood Pressure(mm hg)"  placeholder="Diastolic Blood Pressure(mm hg) " >
+        </tr>
+        
+      
+      <tr><td class="txtb"> Insulin(mu U/ml)
+      <td class="txtb">  <input  name="Insulin(mu U/ml)"  placeholder="Insulin(mu U/ml) " >
+        </tr>
+        <tr><td class="txtb"> Body-mass index(weight/height ^ 2)
+            <td class="txtb">  <input  name="Body-mass index(weight/height ^ 2)y" placeholder="Body-mass index(weight/height ^ 2)" > 
+    </tr>
+     
+      <tr> <td class="txtb"> Diabetes Pedegree Function
+      <td class="txtb">  <input  name="Diabetes Pedegree Function"  placeholder="Diabetes Pedegree Function " >
+        </tr>
+        <tr><td class="txtb"> Age(years)
+            <td class="txtb">  <input  name="Age(years)" placeholder="Age(years)" > 
+    </tr>
+    <tr><td class="txtb"> Thickness of skin(mm)
+            <td class="txtb">  <input  name="hickness of skin(mm)" placeholder="Thickness of skin(mm)" > 
+    </tr>
+      <tr>
+    <td  colspan=2 align=center><br><button class="btn" type="submit">Predict Probability</button>
+    </tr>
+       
+    </table>
+      <button class="btn">
+    {{p}}
+      </button>
+    </form>
+    
+   
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+       </body>
+</html>
